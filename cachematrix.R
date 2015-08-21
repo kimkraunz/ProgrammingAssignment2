@@ -2,10 +2,10 @@
 
 
 makeCacheMatrix <- function(x = matrix()) {
-    ## Returns a vector that contains the functions to change the matrix (if        needed), return the matrix, store the value 'm', and return 'm' 
+    ## Returns a vector that contains the functions to change the matrix (if needed), return the matrix, store the value 'm', and return 'm' 
     m <- NULL
     set <- function(y) {                        
-        # changes the matrix (if needed) that is stored in the function by              defining 'x' and 'm' to the parent environment.  
+        # changes the matrix (if needed) that is stored in the function by defining 'x' and 'm' to the parent environment.  
         x <<- y                              
         m <<- NULL                              
     }
